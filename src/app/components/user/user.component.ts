@@ -18,20 +18,12 @@ export class UserComponent {
   firstName = 'John';
   lastName = 'Doe';
   age = 20;
+  address = {
+    street: '2nd Aveniue',
+    city: 'Kurunegala',
+    province: 'NWP'
+  };
 
   // Methods
-  constructor() {
-    // this.sayHello();
-    console.log(this.age);
-    this.hasBirthday();
-    console.log(this.age);
-  }
-
-  sayHello() {
-    console.log(`Hello ${this.firstName}`);
-  }
-
-  hasBirthday() {
-    this.age++;
-  }
+  constructor() {}
 }
