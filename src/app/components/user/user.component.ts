@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { User } from '../../models/User';
+
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -15,24 +17,19 @@ import { Component } from '@angular/core';
 })
 export class UserComponent {
   // Properties
-  firstName: string;
-  lastName: string;
-  age: number;
-  address;
-
-  myTuple: [string, number, boolean];
+  user: User;
 
   // Methods
   constructor() {
-    this.firstName = 'John';
-    this.lastName = 'Doe';
-    this.age = 20;
-    this.address = {
-      street: 'First Lane',
-      city: 'Kurunegala',
-      province: 'NWP'
+    this.user = {
+      firstName: 'John',
+      lastName: 'Doe',
+      age: 20,
+      address: {
+        street: 'First Lane',
+        city: 'Kurunegala',
+        province: 'NWP'
+      }
     };
-
-    this.myTuple = ['Hi', 12, true];
   }
 }
