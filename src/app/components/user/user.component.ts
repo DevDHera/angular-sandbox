@@ -15,15 +15,24 @@ import { Component } from '@angular/core';
 })
 export class UserComponent {
   // Properties
-  firstName = 'John';
-  lastName = 'Doe';
-  age = 20;
-  address = {
-    street: '2nd Aveniue',
-    city: 'Kurunegala',
-    province: 'NWP'
-  };
+  firstName: string;
+  lastName: string;
+  age: number;
+  address;
+
+  myTuple: [string, number, boolean];
 
   // Methods
-  constructor() {}
+  constructor() {
+    this.firstName = 'John';
+    this.lastName = 'Doe';
+    this.age = 20;
+    this.address = {
+      street: 'First Lane',
+      city: 'Kurunegala',
+      province: 'NWP'
+    };
+
+    this.myTuple = ['Hi', 12, true];
+  }
 }
